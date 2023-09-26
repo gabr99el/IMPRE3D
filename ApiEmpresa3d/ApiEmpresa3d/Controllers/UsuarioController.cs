@@ -13,25 +13,13 @@ namespace ApiEmpresa3d.Controllers
     public class UsuarioController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<List<Usuario>> Get(){
-            var usuario1 = new Usuario{
-                Id = 1,
-                Email="BB@gmail.com",
-                Senha="darthvader123"
-            };
-            var usuario2 = new Usuario{
-                Id = 2,
-                Email="MarxMaciel@gmail.com",
-                Senha="Marx123456"
-            };
-
-            var usuarios = new List<Usuario>();
-            usuarios.Add(usuario1);
-            usuarios.Add(usuario2);
+        public ActionResult<IEnumerable<Usuario>> Get()
+        {
+            var usuarios = context.Usuarios.ToList();
+            if(usuarios is null)
+                return NotFound();
 
             return usuarios;
-        
-        
         }
 
         [HttpGet("{id}")]

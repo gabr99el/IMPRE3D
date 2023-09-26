@@ -12,22 +12,20 @@ namespace ApiEmpresa3d.Controllers
     [Route("api/[controller]")]
     public class ProjetoController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<List<Projeto>> Get(){
-            var projeto1 = new Projeto{
-                Id = 1,
-                Nome = "busto",
-                dimensoes = "234x534"
-            };
-            var projeto2 = new Projeto{
-                Id = 2,
-                Nome = "Action Figure",
-                dimensoes = "432x789"
-            };
+        private readonly ILogger<ProjetoController> _logger;
+        private readonly ApiEmpresa3dContext;
+        public CursoController()
+        (
+            _logger = _logger;
+            _context = context;
+        )
 
-            var projetos = new List<Projeto>();
-            projetos.Add(projeto1);
-            projetos.Add(projeto2);
+        [HttpGet]
+        public ActionResult<IEnumerable<Projeto>> Get()
+        {
+            var projetos = context.Projetos.ToList();
+            if(projetos is null)
+                return NotFound();
 
             return projetos;
         }

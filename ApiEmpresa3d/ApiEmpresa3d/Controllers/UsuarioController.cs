@@ -42,14 +42,14 @@ namespace ApiEmpresa3d.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ResponseRequest> Post([FromBody]Usuario usuario){
-            var resposta = new ResponseRequest(){
-                Codigo = 200,
-                Mensagem = "Registro efetuado com sucesso!"
-            };
-            return resposta;
-        }
-        
+        public ActionResult Post(Usuario usuario){
+            _context.Usuario.Add(usuario);
+            _context.SaveChanges();
+
+            return new CreatedAtRouteResult("GetUsuario",
+            new{ id = usuario.Id},usuario);
+        } 
+
         [HttpPut]
         public ActionResult<ResponseRequest> Put([FromBody]Usuario usuario){
             var resposta = new ResponseRequest(){

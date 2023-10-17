@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ApiEmpresa3d.model;
+using ApiEmpresa3d.Context;
 
 namespace ApiEmpresa3d.Controllers
 {
@@ -13,17 +14,17 @@ namespace ApiEmpresa3d.Controllers
     public class ProjetoController : ControllerBase
     {
         private readonly ILogger<ProjetoController> _logger;
-        private readonly ApiEmpresa3dContext;
-        public CursoController()
-        (
-            _logger = _logger;
+        private readonly ApiEmpresa3dContext _context;
+        public ProjetoController(ILogger<ProjetoController> logger, ApiEmpresa3dContext context)
+        {
+            _logger = logger;
             _context = context;
-        )
+        }
 
         [HttpGet]
         public ActionResult<IEnumerable<Projeto>> Get()
         {
-            var projetos = context.Projetos.ToList();
+            var projetos = _context.Projeto.ToList();
             if(projetos is null)
                 return NotFound();
 

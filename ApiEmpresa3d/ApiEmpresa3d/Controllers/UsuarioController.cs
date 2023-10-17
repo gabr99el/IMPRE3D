@@ -6,16 +6,25 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ApiEmpresa3d.model;
+using ApiEmpresa3d.Context;
 
 namespace ApiEmpresa3d.Controllers
 {
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
+        private readonly ILogger<UsuarioController> _logger;
+        private readonly ApiEmpresa3dContext _context;
+        public UsuarioController(ILogger<UsuarioController> logger, ApiEmpresa3dContext context)
+        {
+            _logger = logger;
+            _context = context;
+        }
+        
         [HttpGet]
         public ActionResult<IEnumerable<Usuario>> Get()
         {
-            var usuarios = context.Usuarios.ToList();
+            var usuarios = _context.Usuario.ToList();
             if(usuarios is null)
                 return NotFound();
 

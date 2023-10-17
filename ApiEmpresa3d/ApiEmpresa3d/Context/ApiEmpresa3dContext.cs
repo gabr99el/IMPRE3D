@@ -9,15 +9,14 @@ namespace ApiEmpresa3d.Context
 {
     public class ApiEmpresa3dContext : DbContext
     {
-    public ApiEmpresa3dContext(DbContextOptions options) : base(options){}
-    DbSet<Usuario> usuarios { get; set; }
-    DbSet<Projeto> projetos { get; set; }
+        public ApiEmpresa3dContext(DbContextOptions options) : base(options){}
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Projeto> Projeto { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        base.OnModelCreating(modelBuilder);
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
 
     }
-
-}
 }

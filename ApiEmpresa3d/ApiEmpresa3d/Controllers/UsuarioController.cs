@@ -31,14 +31,13 @@ namespace ApiEmpresa3d.Controllers
             return usuarios;
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<Usuario> Get(string id){
-            var usuario3 = new Usuario{
-                Id = 3,
-                Email="",
-                Senha=""
-            };
-            return usuario3;
+        [HttpGet("{id:int}", Name="GetUsuario")]
+        public ActionResult<Usuario> Get(int id){
+            var usuario = _context.Usuario.FirstOrDefault(p => p.Id == id);
+            if(usuario is null)
+                return NotFound("Usuario não encontrado.");
+            
+            return usuario;
         }
 
         [HttpPost]
@@ -50,6 +49,7 @@ namespace ApiEmpresa3d.Controllers
             new{ id = usuario.Id},usuario);
         } 
 
+<<<<<<< HEAD
         [HttpPut]
         public ActionResult<ResponseRequest> Put([FromBody]Usuario usuario){
             var resposta = new ResponseRequest(){
@@ -71,5 +71,8 @@ namespace ApiEmpresa3d.Controllers
 
             return Ok(usuario);
         }
+=======
+       
+>>>>>>> a3c0e3b2de0a9673cabc92769f0b1d68bdf4983a
     }
 }

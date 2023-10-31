@@ -31,24 +31,23 @@ namespace ApiEmpresa3d.Controllers
             return projetos;
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<Projeto> Get(string id){
-            var projeto3 = new Projeto{
-                Id = 3,
-                Nome="capitao america",
-                dimensoes="35x54"
-            };
-            return projeto3;
+        [HttpGet("{id:int}", Name="GetProjeto")]
+        public ActionResult<Projeto> Get(int id){
+            var projeto = _context.Projeto.FirstOrDefault(p => p.Id == id);
+            if(projeto is null)
+                return NotFound("Projeto não encontrado.");
+            
+            return projeto;
         }
 
         [HttpPost]
-        public ActionResult<ResponseRequest> Post([FromBody]Projeto projeto){
-            var resposta = new ResponseRequest(){
-                Codigo = 200,
-                Mensagem = "Registro efetuado com sucesso!"
-            };
-            return resposta;
-        }
+        public ActionResult Post(Projeto projeto){
+            _context.Projeto.Add(projeto);
+            _context.SaveChanges();
+
+            return new CreatedAtRouteResult("GetProjeto",
+            new{ id = projeto.Id},projeto);
+        } 
         
         [HttpPut]
         public ActionResult<ResponseRequest> Put([FromBody]Projeto projeto){

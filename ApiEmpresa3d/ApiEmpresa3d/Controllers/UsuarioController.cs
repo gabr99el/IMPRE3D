@@ -59,13 +59,17 @@ namespace ApiEmpresa3d.Controllers
             return resposta;
         }
 
-        [HttpDelete("{id}")]
-        public ActionResult<ResponseRequest> Delete(string id){
-            var resposta = new ResponseRequest(){
-                Codigo = 200,
-                Mensagem = "Usuario deletado com sucesso!"
-            };
-            return resposta;
+        [HttpDelete("{id:int}")]
+        public ActionResult Delete(int id){
+            var usuario = _context.Usuario.FirstOrDefault(p => p.Id == id);
+
+            if(usuario is null)
+                return NotFound();
+            
+            _context.Usuario.Remove(usuario);
+            _context.SaveChanges();
+
+            return Ok(usuario);
         }
     }
 }

@@ -32,9 +32,9 @@ namespace ApiEmpresa3d.Controllers
             return projetos;
         }
 
-        [HttpGet("{id:int}", Name="GetProjeto")]
-        public ActionResult<Projeto> Get(int id){
-            var projeto = _context.Projeto.FirstOrDefault(p => p.Id == id);
+        [HttpGet("{Id:int}", Name="GetProjeto")]
+        public ActionResult<Projeto> Get(int Id){
+            var projeto = _context.Projeto.FirstOrDefault(p => p.Id == Id);
             if(projeto is null)
                 return NotFound("Projeto não encontrado.");
             
@@ -47,10 +47,10 @@ namespace ApiEmpresa3d.Controllers
             _context.SaveChanges();
 
             return new CreatedAtRouteResult("GetProjeto",
-            new{ id = projeto.Id},projeto);
+            new{ Id = projeto.Id},projeto);
         } 
         
-        [HttpPut("id:int")]
+        [HttpPut("Id:int")]
         public ActionResult Put ( int Id, Projeto projeto){
             if(Id != projeto.Id)
                 return BadRequest();
@@ -63,7 +63,7 @@ namespace ApiEmpresa3d.Controllers
             
         }
 
-        [HttpDelete ("{id int}")] 
+        [HttpDelete ("{Id int}")] 
          public ActionResult Delete(int Id) {
             var projeto= _context.Projeto.FirstOrDefault (P=> P.Id == Id);
 

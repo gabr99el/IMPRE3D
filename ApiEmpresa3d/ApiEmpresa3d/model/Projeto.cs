@@ -10,6 +10,6 @@ namespace ApiEmpresa3d.model
 
         public string Nome{ get; set; }
 
-        public string Dimensoes{ get; set; }
+        public string dimensoes{ get; set; }
     }
 }

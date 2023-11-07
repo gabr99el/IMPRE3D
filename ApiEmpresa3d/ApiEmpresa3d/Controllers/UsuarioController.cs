@@ -49,7 +49,7 @@ namespace ApiEmpresa3d.Controllers
             new{ id = usuario.Id},usuario);
         } 
 
-<<<<<<< HEAD
+
         [HttpPut]
         public ActionResult<ResponseRequest> Put([FromBody]Usuario usuario){
             var resposta = new ResponseRequest(){
@@ -71,8 +71,5 @@ namespace ApiEmpresa3d.Controllers
 
             return Ok(usuario);
         }
-=======
-       
->>>>>>> a3c0e3b2de0a9673cabc92769f0b1d68bdf4983a
     }
 }

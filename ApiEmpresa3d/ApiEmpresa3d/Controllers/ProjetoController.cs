@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ApiEmpresa3d.model;
 using ApiEmpresa3d.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiEmpresa3d.Controllers
 {
@@ -49,22 +50,32 @@ namespace ApiEmpresa3d.Controllers
             new{ id = projeto.Id},projeto);
         } 
         
-        [HttpPut]
-        public ActionResult<ResponseRequest> Put([FromBody]Projeto projeto){
-            var resposta = new ResponseRequest(){
-                Codigo = 200,
-                Mensagem = "Projeto editado com sucesso!"
-            };
-            return resposta;
+        [HttpPut("id:int")]
+        public ActionResult Put ( int Id, Projeto projeto){
+            if(Id != projeto.Id)
+                return BadRequest();
+            
+            _context.Entry(projeto).State = EntityState.Modified;
+            _context.SaveChanges(); 
+
+            return Ok (projeto);
+
+            
         }
 
-        [HttpDelete("{id}")]
-        public ActionResult<ResponseRequest> Delete(string id){
-            var resposta = new ResponseRequest(){
-                Codigo = 200,
-                Mensagem = "Projeto deletado com sucesso!"
-            };
-            return resposta;
+        [HttpDelete ("{id int}")] 
+         public ActionResult Delete(int Id) {
+            var projeto= _context.Projeto.FirstOrDefault (P=> P.Id == Id);
+
+            if (projeto is null) {
+
+                return NotFound();
+             }
+    
+
+                _context.Projeto.Remove(projeto);
+                _context.SaveChanges();
+                return Ok (projeto);
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qKZ5Q6c5DE38VvspF+BPY6y+rLPwtw5wCrWtqvaCsIYz8VbFfNE3CDzf4IZEdGIOBSB8e9TfKc0nfQG4YA2fww==",
+  "dgSpecHash": "SaWuuqdUKxqgENi4HLhKhVKPcqzWXuv3UN/bB9o67UaZN0N1mxnmWEbpG/KHzve7FLkaaBODggCzvtPHBtbcqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\20191034010023\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
+  "projectFilePath": "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20191034010023\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\20191034010023\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",

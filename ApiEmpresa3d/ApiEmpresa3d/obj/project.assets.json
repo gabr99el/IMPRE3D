@@ -1481,11 +1481,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\20191034010023\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
+      "projectUniqueName": "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
       "projectName": "ApiEmpresa3d",
-      "projectPath": "C:\\Users\\20191034010023\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
+      "projectPath": "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
       "packagesPath": "C:\\Users\\20191034010023\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\20191034010023\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\obj\\",
+      "outputPath": "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20191034010023\\AppData\\Roaming\\NuGet\\NuGet.Config"

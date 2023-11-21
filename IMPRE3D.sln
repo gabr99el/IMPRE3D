@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiEmpresa3d", "ApiEmpresa3d", "{6863E9DE-CC4B-4CA8-BE9D-FE1A235C2BF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiEmpresa3d", "ApiEmpresa3d\ApiEmpresa3d\ApiEmpresa3d.csproj", "{5374CF29-ED9B-4D16-AD90-1043E37319C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5374CF29-ED9B-4D16-AD90-1043E37319C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5374CF29-ED9B-4D16-AD90-1043E37319C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5374CF29-ED9B-4D16-AD90-1043E37319C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5374CF29-ED9B-4D16-AD90-1043E37319C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5374CF29-ED9B-4D16-AD90-1043E37319C4} = {6863E9DE-CC4B-4CA8-BE9D-FE1A235C2BF8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {065FCE8B-CE8B-4AEA-90CD-1044D7A81832}
+	EndGlobalSection
+EndGlobal

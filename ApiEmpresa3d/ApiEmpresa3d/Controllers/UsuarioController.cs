@@ -59,17 +59,16 @@ namespace ApiEmpresa3d.Controllers
             return resposta;
         }
 
-        [HttpDelete("{id:int}")]
-        public ActionResult Delete(int id){
-            var usuario = _context.Usuario.FirstOrDefault(p => p.Id == id);
+        public ActionResult Delete(int Id) {
+            var usuario= _context.Usuario.FirstOrDefault (P=> P.Id == Id);
 
-            if(usuario is null)
+            if (usuario is null) {
                 return NotFound();
-            
-            _context.Usuario.Remove(usuario);
-            _context.SaveChanges();
-
-            return Ok(usuario);
+             }
+    
+                _context.Usuario.Remove(usuario);
+                _context.SaveChanges();
+                return Ok (usuario);
         }
     }
 }

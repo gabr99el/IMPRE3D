@@ -41,6 +41,15 @@ namespace ApiEmpresa3d.Controllers
             return usuario;
         }
 
+        [HttpPost]
+        public ActionResult Post(Usuario usuario){
+            _context.Usuario.Add(usuario);
+            _context.SaveChanges();
+
+            return new CreatedAtRouteResult("GetUsuario",
+            new{ Id = usuario.Id},usuario);
+        } 
+
         [HttpPut]
         public ActionResult Put ( int Id, Usuario usuario){
             if(Id != usuario.Id)

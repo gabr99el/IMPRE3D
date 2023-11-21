@@ -61,6 +61,7 @@ namespace ApiEmpresa3d.Controllers
             return Ok (usuario);  
         }    
 
+        [HttpDelete("{id int}")]
         public ActionResult Delete(int Id) {
             var usuario= _context.Usuario.FirstOrDefault (P=> P.Id == Id);
 

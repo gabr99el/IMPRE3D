@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {}
+    "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {
+    "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
+        "projectUniqueName": "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
         "projectName": "ApiEmpresa3d",
-        "projectPath": "C:\\Users\\rober\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
-        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\obj\\",
+        "projectPath": "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
+        "packagesPath": "C:\\Users\\20201034010042\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\20201034010042\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

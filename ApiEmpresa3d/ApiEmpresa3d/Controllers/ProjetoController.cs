@@ -32,7 +32,7 @@ namespace ApiEmpresa3d.Controllers
             return projetos;
         }
 
-        [HttpGet("{Id:int}", Name="GetProjeto")]
+        [HttpGet("{id:int}", Name="GetProjeto")]
         public ActionResult<Projeto> Get(int Id){
             var projeto = _context.Projeto.FirstOrDefault(p => p.Id == Id);
             if(projeto is null)
@@ -50,9 +50,9 @@ namespace ApiEmpresa3d.Controllers
             new{ Id = projeto.Id},projeto);
         } 
         
-        [HttpPut("Id:int")]
-        public ActionResult Put ( int Id, Projeto projeto){
-            if(Id != projeto.Id)
+        [HttpPut("id:int")]
+        public ActionResult Put ( int id, Projeto projeto){
+            if(id != projeto.Id)
                 return BadRequest();
             
             _context.Entry(projeto).State = EntityState.Modified;
@@ -63,9 +63,9 @@ namespace ApiEmpresa3d.Controllers
             
         }
 
-        [HttpDelete ("{Id int}")] 
-         public ActionResult Delete(int Id) {
-            var projeto= _context.Projeto.FirstOrDefault (P=> P.Id == Id);
+        [HttpDelete ("{id:int}")] 
+         public ActionResult Delete(int id) {
+            var projeto= _context.Projeto.FirstOrDefault (P=> P.Id == id);
 
             if (projeto is null) {
 

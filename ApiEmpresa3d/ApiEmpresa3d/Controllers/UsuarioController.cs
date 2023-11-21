@@ -50,7 +50,7 @@ namespace ApiEmpresa3d.Controllers
             new{ Id = usuario.Id},usuario);
         } 
 
-        [HttpPut]
+        [HttpPut("Id:int")]
         public ActionResult Put ( int Id, Usuario usuario){
             if(Id != usuario.Id)
                 return BadRequest();

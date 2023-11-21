@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {}
   },
   "projects": {
@@ -16,22 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20191034010023\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-    "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
-        "projectName": "ApiEmpresa3d",
-        "projectPath": "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
-        "packagesPath": "C:\\Users\\20201034010042\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\20201034010042\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\20201034010042\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> 0d543c12d49aca3ab1b2e5527b2aaef3b5212066
         ],
         "originalTargetFrameworks": [
           "net7.0"

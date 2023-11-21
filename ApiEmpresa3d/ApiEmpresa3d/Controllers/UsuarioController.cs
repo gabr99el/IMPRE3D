@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ApiEmpresa3d.model;
 using ApiEmpresa3d.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiEmpresa3d.Controllers
 {
@@ -40,24 +41,16 @@ namespace ApiEmpresa3d.Controllers
             return usuario;
         }
 
-        [HttpPost]
-        public ActionResult Post(Usuario usuario){
-            _context.Usuario.Add(usuario);
-            _context.SaveChanges();
-
-            return new CreatedAtRouteResult("GetUsuario",
-            new{ id = usuario.Id},usuario);
-        } 
-
-
         [HttpPut]
-        public ActionResult<ResponseRequest> Put([FromBody]Usuario usuario){
-            var resposta = new ResponseRequest(){
-                Codigo = 200,
-                Mensagem = "Usuario editado com sucesso!"
-            };
-            return resposta;
-        }
+        public ActionResult Put ( int Id, Usuario usuario){
+            if(Id != usuario.Id)
+                return BadRequest();
+            
+            _context.Entry(usuario).State = EntityState.Modified;
+            _context.SaveChanges(); 
+
+            return Ok (usuario);  
+        }    
 
         public ActionResult Delete(int Id) {
             var usuario= _context.Usuario.FirstOrDefault (P=> P.Id == Id);

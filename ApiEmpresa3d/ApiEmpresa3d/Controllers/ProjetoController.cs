@@ -60,10 +60,9 @@ namespace ApiEmpresa3d.Controllers
 
             return Ok (projeto);
 
-            
         }
 
-        [HttpDelete ("{id:int}")] 
+        [HttpDelete ("id:int")] 
          public ActionResult Delete(int id) {
             var projeto= _context.Projeto.FirstOrDefault (P=> P.Id == id);
 

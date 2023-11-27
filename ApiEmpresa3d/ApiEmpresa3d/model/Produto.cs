@@ -14,7 +14,8 @@ namespace ApiEmpresa3d.model
  
         public string Estoque{ get; set; }
         
-
         public string Preço{ get; set; }
+
+        public string Material{ get; set; }
     }
 }

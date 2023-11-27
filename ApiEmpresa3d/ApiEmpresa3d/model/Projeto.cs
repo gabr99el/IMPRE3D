@@ -12,5 +12,7 @@ namespace ApiEmpresa3d.model
 
         public string dimensoes{ get; set; }
 
+        public string Material{ get; set; }
+        
     }
 }

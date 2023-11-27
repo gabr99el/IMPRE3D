@@ -50,7 +50,7 @@ namespace ApiEmpresa3d.Controllers
             new{ Id = usuario.Id},usuario);
         } 
 
-        [HttpPut("id:int")]
+        [HttpPut("{id:int}")]
         public ActionResult Put ( int id, Usuario usuario){
             if(id != usuario.Id)
                 return BadRequest();
@@ -61,7 +61,7 @@ namespace ApiEmpresa3d.Controllers
             return Ok (usuario);  
         }    
 
-        [HttpDelete("id:int")]
+        [HttpDelete("{id:int}")]
         public ActionResult Delete(int id) {
             var usuario= _context.Usuario.FirstOrDefault (P=> P.Id == id);
 

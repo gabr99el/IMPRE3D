@@ -11,10 +11,10 @@ namespace ApiEmpresa3d.model
         public string Nome{ get; set; }
 
         public string dimensoes{ get; set; }
- 
-        public string Estoque{ get; set; }
-        
-        public string Preço{ get; set; }
+
+        public int Estoque{ get; set; }
+
+        public decimal Preço{ get; set; }
 
         public string Material{ get; set; }
     }

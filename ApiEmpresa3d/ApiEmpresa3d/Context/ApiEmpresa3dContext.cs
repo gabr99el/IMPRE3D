@@ -12,6 +12,8 @@ namespace ApiEmpresa3d.Context
         public ApiEmpresa3dContext(DbContextOptions options) : base(options){}
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Projeto> Projeto { get; set; }
+        public DbSet<Produto> Produto { get; set; }
+        public DbSet<Compra> Compra { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

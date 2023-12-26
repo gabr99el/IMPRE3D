@@ -8,9 +8,11 @@ using Microsoft.Extensions.Logging;
 using ApiEmpresa3d.model;
 using ApiEmpresa3d.Context;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ApiEmpresa3d.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("api/[controller]")]
     public class ProjetoController : ControllerBase
     {

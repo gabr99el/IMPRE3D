@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ApiEmpresa3d.model;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 
 namespace ApiEmpresa3d.Context
 {
-    public class ApiEmpresa3dContext : DbContext
+    public class ApiEmpresa3dContext : IdentityDbContext
     {
         public ApiEmpresa3dContext(DbContextOptions options) : base(options){}
         public DbSet<Usuario> Usuario { get; set; }

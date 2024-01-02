@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace ApiEmpresa3d.Controllers
 {
     [Authorize(AuthenticationSchemes = "Bearer")]
+    [ApiController]
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {

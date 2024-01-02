@@ -185,3 +185,4 @@ C:\Users\20191034010023\Documents\IMPRE3D\ApiEmpresa3d\ApiEmpresa3d\bin\Debug\ne
 C:\Users\20191034010023\Documents\IMPRE3D\ApiEmpresa3d\ApiEmpresa3d\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\20191034010023\Documents\IMPRE3D\ApiEmpresa3d\ApiEmpresa3d\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\20191034010023\Documents\IMPRE3D\ApiEmpresa3d\ApiEmpresa3d\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\20191034010023\Documents\IMPRE3D\ApiEmpresa3d\ApiEmpresa3d\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll

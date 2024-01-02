@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-[ApiController]
+    [ApiController]
     [Route("[controller]")]
     public class AutorizaController : Controller
     {

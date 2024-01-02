@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiEmpresa3d")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75b5b0cd11c0ab39fe2e0f2d6a0677791c608e59")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiEmpresa3d")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiEmpresa3d")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

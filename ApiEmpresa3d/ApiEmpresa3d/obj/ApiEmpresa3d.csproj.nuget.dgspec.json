@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {}
+    "C:\\Users\\user\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {}
   },
   "projects": {
-    "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {
+    "C:\\Users\\user\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
+        "projectUniqueName": "C:\\Users\\user\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
         "projectName": "ApiEmpresa3d",
-        "projectPath": "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
-        "packagesPath": "C:\\Users\\20191034010023\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\20191034010023\\Documents\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\obj\\",
+        "projectPath": "C:\\Users\\user\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\ApiEmpresa3d.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\IMPRE3D\\ApiEmpresa3d\\ApiEmpresa3d\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\20191034010023\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,24 +92,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
